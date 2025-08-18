@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "video_components",
+  "info": {
+    "singularName": "video-component",
+    "pluralName": "video-components",
+    "displayName": "Video Component"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Video": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files",
+        "videos"
+      ]
+    },
+    "Poster": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}

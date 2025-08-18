@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_schedule_item_fields",
+  "info": {
+    "displayName": "fields"
+  },
+  "options": {},
+  "attributes": {
+    "startTime": {
+      "type": "time",
+      "required": true
+    },
+    "endTime": {
+      "type": "time",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "costructor": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

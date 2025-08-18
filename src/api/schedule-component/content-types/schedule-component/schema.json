@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedule_components",
+  "info": {
+    "singularName": "schedule-component",
+    "pluralName": "schedule-components",
+    "displayName": "Schedule Component"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Monday": {
+      "type": "component",
+      "component": "schedule-item.fields",
+      "repeatable": true
+    },
+    "tuesday": {
+      "type": "component",
+      "component": "schedule-item.fields",
+      "repeatable": true
+    },
+    "Wednesday": {
+      "type": "component",
+      "component": "schedule-item.fields",
+      "repeatable": true
+    },
+    "Thursday": {
+      "type": "component",
+      "component": "schedule-item.fields",
+      "repeatable": true
+    },
+    "Friday": {
+      "type": "component",
+      "component": "schedule-item.fields",
+      "repeatable": true
+    },
+    "Saturday": {
+      "type": "component",
+      "component": "schedule-item.fields",
+      "repeatable": true
+    },
+    "Sunday": {
+      "type": "component",
+      "component": "schedule-item.fields",
+      "repeatable": true
+    }
+  }
+}
