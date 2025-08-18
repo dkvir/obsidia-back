@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Video": {
+    "video": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -20,7 +20,7 @@
         "videos"
       ]
     },
-    "Poster": {
+    "poster": {
       "type": "media",
       "multiple": false,
       "required": true,

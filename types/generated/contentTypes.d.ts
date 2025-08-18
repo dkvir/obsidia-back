@@ -454,13 +454,13 @@ export interface ApiVideoComponentVideoComponent
       'api::video-component.video-component'
     > &
       Schema.Attribute.Private;
-    Poster: Schema.Attribute.Media<'images' | 'files'> &
+    poster: Schema.Attribute.Media<'images' | 'files'> &
       Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Video: Schema.Attribute.Media<'files' | 'videos'> &
+    video: Schema.Attribute.Media<'files' | 'videos'> &
       Schema.Attribute.Required;
   };
 }
