@@ -1,5 +1,13 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface ScheduleItemDay extends Struct.ComponentSchema {
+  collectionName: 'components_schedule_item_days';
+  info: {
+    displayName: 'day';
+  };
+  attributes: {};
+}
+
 export interface ScheduleItemFields extends Struct.ComponentSchema {
   collectionName: 'components_schedule_item_fields';
   info: {
@@ -16,6 +24,7 @@ export interface ScheduleItemFields extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'schedule-item.day': ScheduleItemDay;
       'schedule-item.fields': ScheduleItemFields;
     }
   }

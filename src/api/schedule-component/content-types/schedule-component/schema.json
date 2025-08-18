@@ -11,37 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Monday": {
-      "type": "component",
-      "component": "schedule-item.fields",
-      "repeatable": true
+    "label": {
+      "type": "string"
     },
-    "tuesday": {
-      "type": "component",
-      "component": "schedule-item.fields",
-      "repeatable": true
-    },
-    "Wednesday": {
-      "type": "component",
-      "component": "schedule-item.fields",
-      "repeatable": true
-    },
-    "Thursday": {
-      "type": "component",
-      "component": "schedule-item.fields",
-      "repeatable": true
-    },
-    "Friday": {
-      "type": "component",
-      "component": "schedule-item.fields",
-      "repeatable": true
-    },
-    "Saturday": {
-      "type": "component",
-      "component": "schedule-item.fields",
-      "repeatable": true
-    },
-    "Sunday": {
+    "scheduleList": {
       "type": "component",
       "component": "schedule-item.fields",
       "repeatable": true

@@ -418,23 +418,18 @@ export interface ApiScheduleComponentScheduleComponent
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Friday: Schema.Attribute.Component<'schedule-item.fields', true>;
+    label: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::schedule-component.schedule-component'
     > &
       Schema.Attribute.Private;
-    Monday: Schema.Attribute.Component<'schedule-item.fields', true>;
     publishedAt: Schema.Attribute.DateTime;
-    Saturday: Schema.Attribute.Component<'schedule-item.fields', true>;
-    Sunday: Schema.Attribute.Component<'schedule-item.fields', true>;
-    Thursday: Schema.Attribute.Component<'schedule-item.fields', true>;
-    tuesday: Schema.Attribute.Component<'schedule-item.fields', true>;
+    scheduleList: Schema.Attribute.Component<'schedule-item.fields', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Wednesday: Schema.Attribute.Component<'schedule-item.fields', true>;
   };
 }
 
