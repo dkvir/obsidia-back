@@ -376,7 +376,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiContactContact extends Struct.CollectionTypeSchema {
   collectionName: 'contacts';
   info: {
-    displayName: 'Contact';
+    displayName: 'Contacts';
     pluralName: 'contacts';
     singularName: 'contact';
   };
@@ -400,6 +400,38 @@ export interface ApiContactContact extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiObsidiaInformationObsidiaInformation
+  extends Struct.SingleTypeSchema {
+  collectionName: 'obsidia_informations';
+  info: {
+    displayName: 'Obsidia information';
+    pluralName: 'obsidia-informations';
+    singularName: 'obsidia-information';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    facebook: Schema.Attribute.String;
+    instagram: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::obsidia-information.obsidia-information'
+    > &
+      Schema.Attribute.Private;
+    phone: Schema.Attribute.BigInteger;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    youtube: Schema.Attribute.String;
   };
 }
 
@@ -975,6 +1007,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::contact.contact': ApiContactContact;
+      'api::obsidia-information.obsidia-information': ApiObsidiaInformationObsidiaInformation;
       'api::schedule-component.schedule-component': ApiScheduleComponentScheduleComponent;
       'api::video-component.video-component': ApiVideoComponentVideoComponent;
       'plugin::content-releases.release': PluginContentReleasesRelease;

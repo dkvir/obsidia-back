@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "obsidia_informations",
+  "info": {
+    "singularName": "obsidia-information",
+    "pluralName": "obsidia-informations",
+    "displayName": "Obsidia information"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "phone": {
+      "type": "biginteger"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    }
+  }
+}
