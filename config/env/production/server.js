@@ -4,4 +4,11 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS"),
   },
+  // Add this vite configuration for production
+  vite: {
+    server: {
+      host: true,
+      allowedHosts: ["obsidia.life", "www.obsidia.life", "localhost"],
+    },
+  },
 });
