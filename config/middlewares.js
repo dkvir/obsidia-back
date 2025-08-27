@@ -29,7 +29,7 @@ module.exports = [
   {
     name: "strapi::cors",
     config: {
-      enabled: true,
+      // Remove the 'enabled: true' line
       headers: "*",
       origin: ["https://obsidia.life", "https://www.obsidia.life"],
     },
