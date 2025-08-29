@@ -2,16 +2,15 @@ module.exports = ({ env }) => ({
   host: env("HOST", "0.0.0.0"),
   port: env.int("PORT", 1337),
   proxy: true,
-  url: env("APP_URL"), // https://obsidia.life
+  url: env("BACKEND_URL"),
   app: {
     keys: env.array("APP_KEYS"),
   },
   webhooks: {
     populateRelations: env.bool("WEBHOOKS_POPULATE_RELATIONS", false),
   },
-  // Add these missing configurations
   admin: {
-    url: env("APP_URL") + "/admin",
+    url: env("BACKEND_URL") + "/admin", // Will be https://back.obsidia.life/admin
     serveAdminPanel: true,
   },
 });
