@@ -11,7 +11,7 @@ module.exports = ({ env }) => ({
   vite: {
     server: {
       host: true,
-      allowedHosts: ["obsidia.life", "www.obsidia.life", "localhost"],
+      allowedHosts: ["back.obsidia.life", "www.back.obsidia.life", "localhost"],
     },
   },
 });
