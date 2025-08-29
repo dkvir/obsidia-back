@@ -10,7 +10,7 @@ module.exports = ({ env }) => ({
     populateRelations: env.bool("WEBHOOKS_POPULATE_RELATIONS", false),
   },
   admin: {
-    url: env("BACKEND_URL") + "/admin", // Will be https://back.obsidia.life/admin
+    url: env("BACKEND_URL"),
     serveAdminPanel: true,
   },
 });
