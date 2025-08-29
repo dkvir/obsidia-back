@@ -11,7 +11,7 @@ module.exports = ({ env }) => ({
   },
   // Add these missing configurations
   admin: {
-    url: "/admin",
+    url: env("APP_URL") + "/admin",
     serveAdminPanel: true,
   },
 });
